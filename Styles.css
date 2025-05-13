@@ -15,6 +15,7 @@
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
+    border: 8px solid black;
 }
 
 #part-1 {
@@ -30,6 +31,7 @@
     gap: 30px;
     justify-items: center;
     padding: 3px;
+    border: 18px solid white;
 }
 
 #image {
@@ -46,7 +48,6 @@
     width: 300px;
 
 }
-
 .search-input {
     border: none;
     outline: none;
@@ -163,7 +164,7 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     justify-items: center;
-    padding: 20px;
+    padding: 20px 30px;
 }
 
 .card {
@@ -343,7 +344,7 @@ h3 {
 }
 
 .banner2 {
-    height: 200px;
+    height: 250px;
     background-image: url("https://img.freepik.com/fotos-premium/diseno-reloj-telefono-sobre-fondo-azul-electrodomesticos-electronica_73741-1069.jpg?w=740");
     background-size: cover;
     /* Esto asegura que cubra todo el contenedor */
@@ -377,12 +378,13 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .subscribe-form {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .subscribe-form input {
@@ -390,6 +392,8 @@ h3 {
     width: 250px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .subscribe-form button {
@@ -399,18 +403,19 @@ h3 {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    height: 40px;
 }
 
 .certificados {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-    /* sombra solo abajo */
+  
     padding: 20px;
     background: white;
     justify-items: end;
-
+    border-top: 50px solid white;
+    border-bottom: 10px solid white;
 }
 
 #logo-cer {
@@ -499,7 +504,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 65px;
     background-color: #fff;
     border-top: 1px solid #ddd;
     font-size: 14px;
@@ -568,8 +573,7 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding: 10px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-        /* sombra solo abajo */
+        
         padding: 20px;
         background: white;
         justify-items: center;
@@ -630,8 +634,7 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding: 10px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-        /* sombra solo abajo */
+       
         padding: 20px;
         background: white;
 
@@ -695,7 +698,7 @@ h3 {
     .filter-container {
         width: 350px;
         background: white;
-        padding: 10px;
+        padding: px;
         border-radius: 10px;
 
     }
@@ -713,11 +716,10 @@ h3 {
 
     .certificados {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 25px;
-        padding: 10px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-        /* sombra solo abajo */
+        padding: 5px;
+    
         padding: 20px;
         background: white;
 
@@ -740,3 +742,51 @@ h3 {
 
 
 }
+@media (max-width: 500px) {
+    .certificados {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        padding: 10px;
+       
+        padding: 20px;
+        background: white;
+    }
+    .productos {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 350px) {
+    .secion1 {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .botones {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        background-color: transparent;
+    }
+    .filter-container {
+        width: 320px;
+        background: white;
+        padding: 2px;
+        border-radius: 10px;
+    }
+
+    .contenido {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding-left: 5px; 
+         padding-right: 5px; 
+    }
+
+}
+    
+
+
+
